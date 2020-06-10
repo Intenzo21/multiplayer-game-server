@@ -18,7 +18,7 @@ Class **‘MUD’** contains the following public methods: **addThing()**, **del
 
 A **MUD** game server and a client were implemented, based on Java **RMI**:
 
-MUD game server application classes:
+#### MUD game server application classes:
 
 * **‘MUDServerInterface’** - a remote interface that extends **java.rmi.Remote** and declares a set of remote methods
 
@@ -26,18 +26,18 @@ MUD game server application classes:
 
 * **‘MUDServerMainline’** – server mainline that registers remote objects with the **RMI** registry
 
-MUD client application classes:
+#### MUD client application classes:
 
-* **‘MUDClientInterface’ – the client interface which declares a set of methods to utilise the remote ones provided by the remote object.
+* **‘MUDClientInterface’** – the client interface which declares a set of methods to utilise the remote ones provided by the remote object.
 
-* **‘MUDClientImpl’ – implements the client interface class methods which invoke the remote object
+* **‘MUDClientImpl’** – implements the client interface class methods which invoke the remote object
 
-* **‘MUDClientMainline’ – fetches the remote object and calls the client methods which invoke the remote object
+* **‘MUDClientMainline’** – fetches the remote object and calls the client methods which invoke the remote object
 
 The **MUD** game server effectively grants multiple clients access to its remote methods and a view of each others’ actions.
 A user can create / switch to / join another **MUD** and continue playing in the new **MUD**, effectively playing multiple **MUDs**, and being able to switch the users “game focus” between multiple games. The server restricts the number of **MUDs** (3 **MUDs**) that can run at any time and the total number of users (2 players) logged on to them.
 
-The additional features of the multiplayer game server comprise of:
+#### The additional features of the multiplayer game server comprise of:
 
 * Responsiveness – automatic refresh of player consoles:
 
@@ -77,7 +77,7 @@ After joining a **MUD** the start location info of the player is printed out to 
 
 * **'quit'** - leave all **MUDs** and quit server
 
-* **'Enter'** (**‘Return’**) key for current MUD and location details (acting as a refresh of the console output)
+* **'Enter'** (**‘Return’**) key for current **MUD** and location details (acting as a refresh of the console output)
 
 ## 2. How to run
 
@@ -112,4 +112,4 @@ After joining a **MUD** the start location info of the player is printed out to 
   java cs3524.solutions.mud.MUDClientMainline localhost 50010 50013
   ```
   
-6. Enjoy!
+#### 6. Enjoy!
