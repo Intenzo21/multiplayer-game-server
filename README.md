@@ -112,4 +112,4 @@ After joining a **MUD** the start location info of the player is printed out to 
   java cs3524.solutions.mud.MUDClientMainline localhost 50010 50013
   ```
   
-#### 6. Enjoy!
+6. **Enjoy!**
