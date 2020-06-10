@@ -1,16 +1,21 @@
 # multiplayer-game-server
-A simple game server, created using Java RMI, that allows multiple players (clients) access to a MUD (Multi User Dungeon or Dimension or Domain)
-CS3524 Assessment 2 Multiplayer Game Server
-Name: Hasan Ahmedov
-ID: 51768277
-1. Description
+
+## 1. Description
+
 In this assessment, we had to implement a simple game server that allows multiple players (clients) access to a MUD (Multi User Dungeon or Dimension or Domain). It examined our ability to design and implement distributed systems using Java RMI.
+
 Initially we were provided with a ‘MUD’ class, which supplies a graph based representation of a MUD world. In order to represent this game graph in memory, the ‘MUD’ class uses two other classes ‘Vertex’ and ‘Edge’:
-• The ‘Vertex’ class represents a vertex in the graph
-o These are the ‘locations’ in the MUD game
-• The ‘Edge’, class represents an edge in the graph
-o These are the paths between locations in the MUD game.
+
+* The ‘Vertex’ class represents a vertex in the graph
+
+  o These are the ‘locations’ in the MUD game
+  
+* The ‘Edge’, class represents an edge in the graph
+
+  o These are the paths between locations in the MUD game.
+  
 Class ‘MUD’ contains the following public methods: addThing(), delThing() moveThing(), locationInfo(). A ‘thing’ in terms of this MUD implementation is everything that is situated at a location this includes the players that move through the game, or items that can be picked up at a location.
+
 A MUD game server and a client were implemented, based on Java RMI:
  MUD game server application classes:
 o ‘MUDServerInterface’ - a remote interface that extends java.rmi.Remote and declares a set of remote methods
