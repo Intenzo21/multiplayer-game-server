@@ -20,11 +20,11 @@ A **MUD** game server and a client were implemented, based on Java **RMI**:
 
 MUD game server application classes:
 
-* **‘MUDServerInterface’ - a remote interface that extends java.rmi.Remote and declares a set of remote methods
+* **‘MUDServerInterface’** - a remote interface that extends **java.rmi.Remote** and declares a set of remote methods
 
-* **‘MUDServerImpl’ – a class that implements the interface remote methods
+* **‘MUDServerImpl’** – a class that implements the interface remote methods
 
-* **‘MUDServerMainline’ – server mainline that registers remote objects with the RMI registry
+* **‘MUDServerMainline’** – server mainline that registers remote objects with the **RMI** registry
 
 MUD client application classes:
 
@@ -34,14 +34,14 @@ MUD client application classes:
 
 * **‘MUDClientMainline’ – fetches the remote object and calls the client methods which invoke the remote object
 
-The MUD game server effectively grants multiple clients access to its remote methods and a view of each others’ actions.
-A user can create / switch to / join another MUD and continue playing in the new MUD, effectively playing multiple MUDs, and being able to switch the users “game focus” between multiple games. The server restricts the number of MUDs (3 MUDs) that can run at any time and the total number of users (2 players) logged on to MUDs.
+The **MUD** game server effectively grants multiple clients access to its remote methods and a view of each others’ actions.
+A user can create / switch to / join another **MUD** and continue playing in the new **MUD**, effectively playing multiple **MUDs**, and being able to switch the users “game focus” between multiple games. The server restricts the number of **MUDs** (3 **MUDs**) that can run at any time and the total number of users (2 players) logged on to them.
 
 The additional features of the multiplayer game server comprise of:
 
 * Responsiveness – automatic refresh of player consoles:
 
-  o A call back implementation was used to allow the server to push changes in a MUD game to all the clients that are currently playing the game (player arriving at a location, a player collecting items etc.)
+  o A call back implementation was used to allow the server to push changes in a **MUD** game to all the clients that are currently playing the game (player arriving at a location, a player collecting items etc.)
 
 * Robustness – the server implementation is robust against clients leaving a game or client applications being aborted (a shutdown hook was used):
 
@@ -51,9 +51,9 @@ The additional features of the multiplayer game server comprise of:
 
   o The server allows players to send personal messages to each other
 
-When a client connects to the server, they are prompted for a username followed by their MUD choice from the currently running MUDs (Default (2x2) and Expanded (3x3) MUDs) menu. The client is also allowed to create their own default (2x2) MUD at runtime by selecting ‘Create your own MUD’ option in the menu.
+When a client connects to the server, they are prompted for a username followed by their **MUD** choice from the currently running **MUDs** (Default (2x2) and Expanded (3x3) **MUDs**) menu. The client is also allowed to create their own default (2x2) MUD at runtime by selecting ‘Create your own MUD’ option in the menu.
 
-After joining a MUD the start location info of the player is printed out to them. Consequently, the player enters the game loop where they are asked to type in a command from the following commands list:
+After joining a **MUD** the start location info of the player is printed out to them. Consequently, the player enters the game loop where they are asked to type in a command from the following commands list:
 
 * **‘help’** - prints out information about the available commands and how to use them.
 
