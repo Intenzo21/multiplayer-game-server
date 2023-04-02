@@ -2,7 +2,7 @@
 
 ## 1. Description
 
-In this assessment, we had to implement a simple game server that allows multiple players (clients) access to a **MUD** (Multi User Dungeon or Dimension or Domain). It examined our ability to design and implement distributed systems using Java RMI.
+In this assessment, we had to implement a simple game server that allows multiple players (clients) access to a **MUD** (Multi-User Dungeon or Dimension or Domain). It examined our ability to design and implement distributed systems using Java RMI.
 
 Initially we were provided with a **”MUD”** class, which supplies a graph based representation of a **MUD** world. In order to represent this game graph in memory, the **”MUD”** class uses two other classes **”Vertex”** and **"Edge"**:
 
